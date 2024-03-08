@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class SplashScreen : AppCompatActivity() {
 
+    //e
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_screen)
