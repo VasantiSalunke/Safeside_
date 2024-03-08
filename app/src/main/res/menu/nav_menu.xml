@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_my_anomalies"
+        android:icon="@drawable/anomaly_list"
+        android:title="My Anomalies" />
+    <item
+        android:id="@+id/nav_report_anomaly"
+        android:icon="@drawable/anomaly_report"
+        android:title="Report Anomaly" />
+    <item
+        android:id="@+id/nav_Settings"
+        android:icon="@drawable/anomaly_setting"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_sign_out"
+        android:icon="@drawable/anomaly_logout"
+        android:orderInCategory="100"
+        android:title="Sign Out" />
+
+</menu>

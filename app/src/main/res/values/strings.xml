@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Safeside</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_map_api_key">AIzaSyCTBpJ30R98qZcKN8SaGChWrdCki6yk6TM</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+
+    <string name="anomaly_title">Report Anomaly</string>
+    <string name="safety_rating">SafetyRating</string>
+    <string name="anomaly_edittext_title">Anomaly Title</string>
+    <string name="anomaly_description_text">Anomaly Description</string>
+    <string name="Add_image">Add Image(s)</string>
+    <string name="save_anomaly">Save Anomaly</string>
+    <string name="user_name">Priya</string>
+</resources>

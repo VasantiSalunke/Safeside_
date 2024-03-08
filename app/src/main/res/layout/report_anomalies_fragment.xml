@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="14dp"
+    android:id="@+id/ReportFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Anomaly"
+        android:textSize="20sp"
+        android:id="@+id/txtReportAnomaly"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+
+        android:id="@+id/criticalLevelTextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/safety_rating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtReportAnomaly"
+        tools:ignore="MissingConstraints" />
+
+
+    <SeekBar
+        android:id="@+id/seekBarCriticalLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/criticalLevelTextViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewAnomalyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/anomaly_edittext_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarCriticalLevel" />
+
+    <EditText
+        android:id="@+id/edtAnomalyTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAnomalyTitle" />
+
+
+    <TextView
+        android:id="@+id/anomalyDescriptionTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/anomaly_description_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAnomalyTitle" />
+
+    <EditText
+        android:id="@+id/edtAnomalyDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/anomalyDescriptionTitleTextView" />
+
+    <EditText
+
+        android:id="@+id/txtAddedOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="added On"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAnomalyDescription" />
+
+    <TextView
+        android:id="@+id/txtLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddedOn" />
+
+    <TextView
+        android:id="@+id/txtLng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLat" />
+
+
+
+    <TextView
+        android:id="@+id/addImageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/Add_image"
+
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAnomalyDescription"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAnomalyDescription" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="158dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addImageTextView"
+        app:layout_goneMarginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="160dp"
+        android:layout_height="127dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addImageTextView"
+        app:layout_goneMarginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="153dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        app:layout_goneMarginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="160dp"
+        android:layout_height="127dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image2"
+        app:layout_goneMarginTop="10dp" />
+
+
+
+    <Button
+        android:id="@+id/btnSaveAnomaly"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/sky_blue"
+        android:text="@string/save_anomaly"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
